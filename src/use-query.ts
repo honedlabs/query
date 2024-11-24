@@ -1,6 +1,7 @@
 import { ref, onMounted } from "vue";
 import { router } from "@inertiajs/vue3"
 import type { UseQueryProps, QueryValue } from "./types";
+import { watchPausable } from "@vueuse/core";
 
 /**
  * What options do I need?
@@ -63,11 +64,12 @@ export const useQuery = (options: UseQueryProps) => {
         })
     }
 
-    // const { pause, resume } = watchPausable(params, execute)
+    const { pause, resume } = watchPausable(params, reload)
 
     onMounted(() => {
-        // pause()
-        // params.value = parseQueryParams();
+        pause()
+        params.value = parseQueryParams();
+        // params.value = 'Hello'
         // lazy && pause();
     })
 
@@ -76,8 +78,8 @@ export const useQuery = (options: UseQueryProps) => {
         set,
         clear,
         reset,
-        reload
-        // pause,
-        // resume,
+        reload,
+        pause,
+        resume,
     }
 }
