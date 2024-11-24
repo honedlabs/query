@@ -6,7 +6,7 @@ export default defineConfig({
     lib: {
       entry: resolve(__dirname, "src/index.ts"),
       name: "Query",
-      fileName: `query-vue`,
+      fileName: `query`,
     },
     rollupOptions: {
       external: [],

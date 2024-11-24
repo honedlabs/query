@@ -1,12 +1,12 @@
 {
-  "name": "@honed/query-vue",
+  "name": "@honed/query",
   "version": "0.0.1",
   "description": "A composable for handling query parameters for Vue and Inertia.",
   "keywords": [
     "honed",
     "vue",
     "inertia",
-    "query-vue"
+    "query"
   ],
   "scripts": {
     "dev": "vite",
@@ -23,31 +23,33 @@
   "author": "Joshua Wallace",
   "repository": {
     "type": "git",
-    "url": "https://github.com/honedlabs/query-vue.git"
+    "url": "https://github.com/honedlabs/query.git"
   },
-  "homepage": "https://github.com/honedlabs/query-vue#readme",
+  "homepage": "https://github.com/honedlabs/query#readme",
   "files": [
     "dist"
   ],
   "type": "module",
-  "main": "./dist/query-vue.umd.cjs",
-  "module": "./dist/query-vue.js",
+  "main": "./dist/query.umd.cjs",
+  "module": "./dist/query.js",
   "types": "./dist/types/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/query-vue.js",
-      "require": "./dist/query-vue.umd.cjs"
+      "import": "./dist/query.js",
+      "require": "./dist/query.umd.cjs"
     }
   },
   "peerDependencies": {
-    "vue": "^3.3.0",
-    "@inertiajs/vue3": "^1.0.0||^2.0.0",
-    "axios": "^1.2.0"
+    "@inertiajs/vue3": "^1.2.0||^2.x",
+    "@vueuse/core": "^10.0.0||^11.0.0",
+    "axios": "^1.2.0",
+    "vue": "^3.x"
   },
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
     "@types/node": "^22.9.3",
     "axios": "^1.2.0",
+    "jsdom": "^25.0.1",
     "typescript": "^5.7.0",
     "vite": "^5.4.11",
     "vite-bundle-visualizer": "^1.2.1",

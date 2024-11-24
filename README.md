@@ -1,5 +1,5 @@
 # Query
-[![npm version](https://badge.fury.io/js/query-vue.svg)](https://badge.fury.io/js/query-vue)
+[![npm version](https://badge.fury.io/js/query.svg)](https://badge.fury.io/js/query)
 
 A composable for handling query parameters for Vue and Inertia.
 
@@ -7,13 +7,13 @@ A composable for handling query parameters for Vue and Inertia.
 You can install the package via npm:
 
 ```bash
-npm i query-vue
+npm i query
 ```
 
 ## Usage
 
 ```javascript
-import * from 'query-vue';
+import * from 'query';
 ```
 
 ## Credits
