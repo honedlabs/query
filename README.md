@@ -1,24 +1,24 @@
-# :package_title
-[![npm version](https://badge.fury.io/js/:package_name.svg)](https://badge.fury.io/js/:package_name)
+# Query
+[![npm version](https://badge.fury.io/js/query-vue.svg)](https://badge.fury.io/js/query-vue)
 
-:package_description
+A composable for handling query parameters for Vue and Inertia.
 
 ## Installation
 You can install the package via npm:
 
 ```bash
-npm i :package_name
+npm i query-vue
 ```
 
 ## Usage
 
 ```javascript
-import * from ':package_name';
+import * from 'query-vue';
 ```
 
 ## Credits
 
-- [:package_author](https://github.com/honedlabs)
+- [Joshua Wallace](https://github.com/honedlabs)
 - [All Contributors](../../contributors)
 
 ## License

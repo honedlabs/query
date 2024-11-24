@@ -1,12 +1,12 @@
 {
-  "name": "@honed/:package_name",
+  "name": "@honed/query-vue",
   "version": "0.0.1",
-  "description": ":package_description",
+  "description": "A composable for handling query parameters for Vue and Inertia.",
   "keywords": [
     "honed",
     "vue",
     "inertia",
-    ":package_name"
+    "query-vue"
   ],
   "scripts": {
     "dev": "vite",
@@ -18,26 +18,25 @@
     "minor": "npm version minor --no-git-tag-version",
     "major": "npm version major --no-git-tag-version",
     "release": "npm run build && npm publish",
-    "init": "npx node ./init.js && npm i",
     "visualise": "npx vite-bundle-visualizer -o ./tmp/bundle-visualizer.html"
   },
-  "author": ":package_author",
+  "author": "Joshua Wallace",
   "repository": {
     "type": "git",
-    "url": "https://github.com/honedlabs/:package_name.git"
+    "url": "https://github.com/honedlabs/query-vue.git"
   },
-  "homepage": "https://github.com/honedlabs/:package_name#readme",
+  "homepage": "https://github.com/honedlabs/query-vue#readme",
   "files": [
     "dist"
   ],
   "type": "module",
-  "main": "./dist/:package_name.umd.cjs",
-  "module": "./dist/:package_name.js",
+  "main": "./dist/query-vue.umd.cjs",
+  "module": "./dist/query-vue.js",
   "types": "./dist/types/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/:package_name.js",
-      "require": "./dist/:package_name.umd.cjs"
+      "import": "./dist/query-vue.js",
+      "require": "./dist/query-vue.umd.cjs"
     }
   },
   "peerDependencies": {
