@@ -53,6 +53,7 @@
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
     "@types/node": "^22.9.3",
+    "@vue/test-utils": "^2.4.6",
     "axios": "^1.2.0",
     "jsdom": "^25.0.1",
     "typescript": "~5.4.0",
