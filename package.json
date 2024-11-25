@@ -1,6 +1,7 @@
 {
   "name": "@honed/query",
-  "version": "0.0.1",
+  "version": "0.1.0",
+  "license": "MIT",
   "description": "A composable for handling query parameters for Vue and Inertia.",
   "keywords": [
     "honed",
@@ -30,13 +31,14 @@
     "dist"
   ],
   "type": "module",
-  "main": "./dist/query.umd.cjs",
-  "module": "./dist/query.js",
-  "types": "./dist/types/index.d.ts",
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.es.js",
+  "types": "./types/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/query.js",
-      "require": "./dist/query.umd.cjs"
+      "types": "./types/index.d.ts",
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js"
     }
   },
   "peerDependencies": {
